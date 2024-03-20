@@ -1,0 +1,103 @@
+:root {
+  --primary-color: rgb(28, 44, 91);
+  --light-primary: rgb(108, 171, 221);
+  --bright-primary: rgb(158, 211, 255);
+  --red: rgb(174, 37, 27);
+  --light-red: rgb(255, 0, 0);
+  --gold: rgb(255, 198, 89);
+  --dark-gold: rgb(212, 161, 42);
+  --white-color: #fff;
+  --gray: #bcbcbc;
+  font-size: 62.5%;
+  --fs-body: 1.6rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: 'Open sans', sans-serif;
+}
+
+body {
+  background: var(--primary-color);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.container {
+  background-color: var(--light-primary);
+  color: var(--white-color);
+  max-width: 60rem;
+  margin: 5rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.calculadora{
+  width: 55rem;
+}
+
+.display {
+  display: block;
+  text-align: right;
+  width: 100%;
+  margin: 1.5rem 0;
+  font-size: 2.4rem;
+  height: 4rem;
+  padding: 0 2rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.display:focus {
+  outline: 0.2rem solid var(--primary-color);
+}
+
+.display:hover {
+  outline: 0.3rem solid var(--primary-color);
+}
+
+tr{
+  width: 100%;
+}
+
+.btn{
+  font-size: 2rem;
+  width: 100%;
+  height: 4rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: 0.1rem solid var(--primary-color);
+}
+
+.btn:hover {
+  outline: 0.2rem solid var(--primary-color);
+  background-color: var(--gray);
+}
+
+.btn-clear{
+  background-color: var(--red);
+}
+
+.btn-clear:hover{
+  background-color: var(--light-red);
+}
+
+.btn-eq{
+  background-color: var(--gold);
+}
+
+.btn-eq:hover{
+  background-color: var(--dark-gold);
+}
+
+@media (max-width: 500px){
+  button.btn-apaga {
+    font-size: 1.4rem;
+  }
+} 
